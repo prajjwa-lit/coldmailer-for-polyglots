@@ -1,0 +1,39 @@
+# --- Node & OS junk ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# --- Environment secrets ---
+.env
+.env.*
+!.env.example
+
+# # --- Logs ---
+# *.log
+# sent.log
+# error.log
+
+# # --- Real data files (keep examples only) ---
+# recipients.csv
+# recipients.txt
+# subjects.txt
+
+# Allow examples in repo
+!recipients.example.csv
+!subjects.example.txt
+
+# --- Templates & resumes ---
+# Ignore all real files by default...
+templates/**
+resumes/**
+
+# ...but keep placeholders/samples so folders exist in repo
+!templates/.gitkeep
+!resumes/.gitkeep
+!templates/example-cover.html
+
+# Optional: if you keep any docs in /docs output, ignore build artifacts
+docs/.cache/
